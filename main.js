@@ -6,5 +6,12 @@ var app = new Vue({
         "apa khabar",
         "yo"
       ]
+
+      newMessage : "",
+    }, 
+    methods {
+      enterNewMessage : function(){
+        alert{this.NewMessage};
+      }
     }
   })

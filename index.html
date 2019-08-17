@@ -28,13 +28,16 @@
         <div class="container ">
             <div class="box main-chat-window">
                 <div class="notification" v-for="message in messages">
-
+                    {{message}}
                 </div>
             </div>
         </div>
 
         <div class="container message-input">
-            <input class="input is-large" type="text" placeholder="Enter Your Message">
+            <input
+             v-model ="newMessage"
+             v-on:keyup.enter =  "enterNewMessage"
+              class="input is-large" type="text" placeholder="Enter Your Message">
         </div>
     </section>
  </div>
