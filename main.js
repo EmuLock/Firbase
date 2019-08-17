@@ -5,13 +5,13 @@ var app = new Vue({
         "Hello world",
         "apa khabar",
         "yo"
-      ]
+      ],
 
       newMessage : "",
     }, 
-    methods {
+    methods: {
       enterNewMessage : function(){
-        alert{this.NewMessage};
+        alert(this.newMessage);
       }
-    }
-  })
+  }
+})
